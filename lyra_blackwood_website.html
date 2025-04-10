@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyra Blackwood | Fantasy Romance Author</title>
+    <style>
+        :root {
+            --primary-color: #6a3b76; /* Purple */
+            --secondary-color: #c7a5d1; /* Light purple */
+            --accent-color: #d4af37; /* Gold */
+            --dark-color: #1e1e24; /* Almost black */
+            --light-color: #f8f8f8; /* Off-white */
+            --font-main: 'Cormorant Garamond', Georgia, serif;
+            --font-accent: 'Montserrat', sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-main);
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-image: linear-gradient(rgba(30, 30, 36, 0.7), rgba(30, 30, 36, 0.7)), url('images/header-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--light-color);
+            position: relative;
+        }
+        
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-family: var(--font-accent);
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: var(--light-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--light-color);
+            text-decoration: none;
+            font-family: var(--font-accent);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+        
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            padding: 0.8rem 2rem;
+            font-family: var(--font-accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #c09a30;
+        }
+        
+        section {
+            padding: 5rem 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            font-weight: 400;
+            color: var(--primary-color);
+        }
+        
+        .book-feature {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .book-cover {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .book-cover img {
+            max-width: 100%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .book-info {
+            flex: 1;
+        }
+        
+        .book-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .book-description {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .about {
+            background-color: var(--secondary-color);
+            color: var(--dark-color);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .about-image {
+            flex: 1;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        
+        .about-text {
+            flex: 2;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .newsletter {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            text-align: center;
+        }
+        
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        input[type="email"] {
+            width: 100%;
+            padding: 0.8rem;
+            font-family: var(--font-accent);
+            font-size: 1rem;
+            border: none;
+            border-radius: 3px;
+        }
+        
+        .btn-newsletter {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+        
+        .btn-newsletter:hover {
+            background-color: #5a3264;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links li {
+            margin: 0 1rem;
+        }
+        
+        .social-links a {
+            color: var(--light-color);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            font-family: var(--font-accent);
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .book-feature, .about-content {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">LYRA BLACKWOOD</a>
+            <ul class="nav-links">
+                <li><a href="#books">Books</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">Fae Academy: Trials of the Chosen</h1>
+            <p class="hero-subtitle">Enter a world where magic determines destiny and the boundary between realms is failing.</p>
+            <a href="#" class="btn">Read Now</a>
+        </div>
+    </header>
+    
+    <section id="books">
+        <div class="container">
+            <h2 class="section-title">Books</h2>
+            <div class="book-feature">
+                <div class="book-cover">
+                    <img src="images/fae-academy-cover.jpg" alt="Fae Academy: Trials of the Chosen book cover">
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Fae Academy: Trials of the Chosen</h3>
+                    <p class="book-description">
+                        Lyra Nightshade has spent nineteen years believing she possesses no magic whatsoever. When she receives a mysterious acceptance letter to Thornwood Academy—the most prestigious magical institution in the realm—she's certain it's a mistake.
+                    </p>
+                    <p class="book-description">
+                        At Thornwood, ancient shadows stir beneath purple-tinged skies. The Veil between realms weakens, and Lyra discovers abilities she never knew she possessed—powers connected to the very forces threatening to break through.
+                    </p>
+                    <p class="book-description">
+                        When Lyra discovers her mother isn't dead but trapped in the Void for the past twenty years, she has mere weeks to master her newfound abilities and execute a daring rescue that could either save both realms or destroy the boundary between them forever.
+                    </p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Lyra</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/author-photo.jpg" alt="Lyra Blackwood">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Lyra Blackwood is a passionate creator of romantasy fiction who believes in the transformative power of both magic and love. Her stories blend elements of fantasy, romance, and adventure, creating immersive worlds where readers can escape reality.
+                    </p>
+                    <p>
+                        With a background in mythology and folklore, Lyra weaves ancient tales and modern sensibilities into her narratives, creating stories that feel both timeless and fresh. Her debut novel, "Fae Academy: Trials of the Chosen," introduces readers to the world of Thornwood Academy and the five fae courts.
+                    </p>
+                    <p>
+                        When not crafting tales of fae courts and forbidden romance, Lyra can be found exploring ancient forests, collecting crystals, and drinking entirely too much tea. She lives with her familiar (a black cat named Shadow) and is currently working on the next book in the Fae Academy saga.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <h2 class="section-title">Join the Realm</h2>
+            <p>Subscribe to my newsletter for exclusive content, book updates, and a free prequel novella!</p>
+            <div class="newsletter-form">
+                <form>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email address" required>
+                    </div>
+                    <button type="submit" class="btn btn-newsletter">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-goodreads"></i></a></li>
+            <li><a href="#"><i class="fab fa-amazon"></i></a></li>
+        </ul>
+        <p>Contact: <a href="mailto:lyra@lyrablackwood.com">lyra@lyrablackwood.com</a></p>
+        <p class="copyright">&copy; 2025 Lyra Blackwood. All rights reserved.</p>
+    </footer>
+</body>
+</html>
