@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyra Blackwood | Fantasy Romance Author</title>
+    <meta name="description" content="Lyra Blackwood writes fae fantasy romance. Fae Academy: Trials of the Chosen is coming soon.">
     <style>
         :root {
             --primary-color: #6a3b76; /* Purple */
@@ -11,8 +12,8 @@
             --accent-color: #d4af37; /* Gold */
             --dark-color: #1e1e24; /* Almost black */
             --light-color: #f8f8f8; /* Off-white */
-            --font-main: 'Cormorant Garamond', Georgia, serif;
-            --font-accent: 'Montserrat', sans-serif;
+            --font-main: Georgia, 'Times New Roman', serif;
+            --font-accent: 'Segoe UI', Helvetica, Arial, sans-serif;
         }
         
         * {
@@ -265,6 +266,55 @@
             opacity: 0.7;
         }
         
+        .coming-soon {
+            display: inline-block;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.7rem 2rem;
+            font-family: var(--font-accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 3px;
+        }
+
+        .book-info .coming-soon {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .fine-print {
+            font-family: var(--font-accent);
+            font-size: 0.8rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 1rem auto 0;
+        }
+
+        .consent-line {
+            font-family: var(--font-accent);
+            font-size: 0.8rem;
+            opacity: 0.85;
+            margin-bottom: 1.5rem;
+        }
+
+        .notices {
+            font-family: var(--font-accent);
+            font-size: 0.8rem;
+            opacity: 0.8;
+            max-width: 700px;
+            margin: 0 auto 1rem;
+        }
+
+        footer a, .consent-line a {
+            color: var(--secondary-color);
+        }
+
+        .sr-only {
+            position: absolute;
+            left: -9999px;
+        }
+
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 3rem;
@@ -280,13 +330,11 @@
             }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body id="top">
     <header>
         <nav>
-            <a href="#" class="logo">LYRA BLACKWOOD</a>
+            <a href="#top" class="logo">LYRA BLACKWOOD</a>
             <ul class="nav-links">
                 <li><a href="#books">Books</a></li>
                 <li><a href="#about">About</a></li>
@@ -297,7 +345,7 @@
         <div class="hero-content">
             <h1 class="hero-title">Fae Academy: Trials of the Chosen</h1>
             <p class="hero-subtitle">Enter a world where magic determines destiny and the boundary between realms is failing.</p>
-            <a href="#" class="btn">Read Now</a>
+            <span class="coming-soon">Coming Soon</span>
         </div>
     </header>
     
@@ -311,15 +359,15 @@
                 <div class="book-info">
                     <h3 class="book-title">Fae Academy: Trials of the Chosen</h3>
                     <p class="book-description">
-                        Lyra Nightshade has spent nineteen years believing she possesses no magic whatsoever. When she receives a mysterious acceptance letter to Thornwood Academy—the most prestigious magical institution in the realm—she's certain it's a mistake.
+                        Lyra Nightshade has spent nineteen years believing she possesses no magic whatsoever. When she receives a mysterious acceptance letter to Thornwood Academy, the most prestigious magical institution in the realm, she's certain it's a mistake.
                     </p>
                     <p class="book-description">
-                        At Thornwood, ancient shadows stir beneath purple-tinged skies. The Veil between realms weakens, and Lyra discovers abilities she never knew she possessed—powers connected to the very forces threatening to break through.
+                        At Thornwood, ancient shadows stir beneath purple-tinged skies. The Veil between realms weakens, and Lyra discovers abilities she never knew she possessed, powers connected to the very forces threatening to break through.
                     </p>
                     <p class="book-description">
                         When Lyra discovers her mother isn't dead but trapped in the Void for the past twenty years, she has mere weeks to master her newfound abilities and execute a daring rescue that could either save both realms or destroy the boundary between them forever.
                     </p>
-                    <a href="#" class="btn">Buy Now</a>
+                    <span class="coming-soon">Coming Soon</span>
                 </div>
             </div>
         </div>
@@ -330,17 +378,17 @@
             <h2 class="section-title">About Lyra</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/author-photo.jpg" alt="Lyra Blackwood">
+                    <img src="images/author-photo.jpg" alt="AI-generated portrait representing the author Lyra Blackwood (a pen name)">
                 </div>
                 <div class="about-text">
                     <p>
-                        Lyra Blackwood is a passionate creator of romantasy fiction who believes in the transformative power of both magic and love. Her stories blend elements of fantasy, romance, and adventure, creating immersive worlds where readers can escape reality.
+                        Lyra Blackwood is a pen name. The stories are fae fantasy romance, blending magic, adventure and slow-burn romance in worlds readers can escape into. The author portrait on this page is AI-generated.
                     </p>
                     <p>
-                        With a background in mythology and folklore, Lyra weaves ancient tales and modern sensibilities into her narratives, creating stories that feel both timeless and fresh. Her debut novel, "Fae Academy: Trials of the Chosen," introduces readers to the world of Thornwood Academy and the five fae courts.
+                        Inspired by mythology and folklore, the Fae Academy series weaves ancient tales and modern sensibilities together. The first book, "Fae Academy: Trials of the Chosen," introduces readers to the world of Thornwood Academy and the five fae courts.
                     </p>
                     <p>
-                        When not crafting tales of fae courts and forbidden romance, Lyra can be found exploring ancient forests, collecting crystals, and drinking entirely too much tea. She lives with her familiar (a black cat named Shadow) and is currently working on the next book in the Fae Academy saga.
+                        The Fae Academy saga is planned as a multi-book series, with more chapters and stories coming. Join the newsletter to hear when each one arrives.
                     </p>
                 </div>
             </div>
@@ -350,28 +398,29 @@
     <section id="newsletter" class="newsletter">
         <div class="container">
             <h2 class="section-title">Join the Realm</h2>
-            <p>Subscribe to my newsletter for exclusive content, book updates, and a free prequel novella!</p>
+            <p>Subscribe to my newsletter for book updates and behind-the-scenes content about the Fae Academy series.</p>
             <div class="newsletter-form">
-                <form>
+                <!-- TODO: replace the action URL with the signup form URL from your email service provider
+                     (Mailchimp, MailerLite, Kit, etc.). Keep the field name your provider requires. -->
+                <form action="REPLACE_WITH_EMAIL_PROVIDER_FORM_URL" method="post">
                     <div class="form-group">
-                        <input type="email" placeholder="Your email address" required>
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" autocomplete="email" required>
                     </div>
+                    <p class="consent-line">By subscribing, you agree to receive emails from Lyra Blackwood. You can unsubscribe at any time using the link in every email. See the <a href="privacy.html">Privacy Policy</a>. For visitors 16 and older.</p>
                     <button type="submit" class="btn btn-newsletter">Subscribe</button>
                 </form>
+                <p class="fine-print">Emails are sent by Godman Development (publishing as Lyra Blackwood), 27364 Onlee Ave, Santa Clarita, CA 91350.</p>
             </div>
         </div>
     </section>
     
     <footer id="contact">
-        <ul class="social-links">
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-goodreads"></i></a></li>
-            <li><a href="#"><i class="fab fa-amazon"></i></a></li>
-        </ul>
+        <!-- Social links removed until real accounts exist. Add them here as plain text links, for example:
+             <a href="https://www.youtube.com/@YourChannel">YouTube</a> -->
+        <p class="notices">Fae Academy is a work of fiction. Names, characters, places and events are products of the author's imagination, and any resemblance to actual persons, living or dead, is coincidental. Cover art, portraits and some video content on this site are created with the help of AI tools. Lyra Blackwood is a pen name.</p>
         <p>Contact: <a href="mailto:lyra@lyrablackwood.com">lyra@lyrablackwood.com</a></p>
-        <p class="copyright">&copy; 2025 Lyra Blackwood. All rights reserved.</p>
+        <p class="copyright">&copy; 2025-2026 Godman Development, publishing as Lyra Blackwood. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
