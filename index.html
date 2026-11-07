@@ -266,6 +266,44 @@
             opacity: 0.7;
         }
         
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .btn-youtube {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            padding: 0.8rem 2rem;
+            font-family: var(--font-accent);
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-radius: 3px;
+            border: 2px solid var(--accent-color);
+            transition: background-color 0.3s;
+        }
+
+        .btn-youtube:hover {
+            background-color: #e6c35a;
+        }
+
+        .footer-watch {
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .footer-watch a {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
         .coming-soon {
             display: inline-block;
             border: 2px solid var(--accent-color);
@@ -337,6 +375,7 @@
             <a href="#top" class="logo">LYRA BLACKWOOD</a>
             <ul class="nav-links">
                 <li><a href="#books">Books</a></li>
+                <li><a href="https://www.youtube.com/@FaeAcademyBooks">YouTube</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -344,7 +383,10 @@
         <div class="hero-content">
             <h1 class="hero-title">Fae Academy: Trials of the Chosen</h1>
             <p class="hero-subtitle">Enter a world where magic determines destiny and the boundary between realms is failing.</p>
-            <span class="coming-soon">Coming Soon</span>
+            <div class="hero-actions">
+                <a class="btn-youtube" href="https://www.youtube.com/@FaeAcademyBooks">Watch on YouTube</a>
+                <span class="coming-soon">Book Coming Soon</span>
+            </div>
         </div>
     </header>
     
@@ -395,7 +437,7 @@
     </section>
     
     <footer id="contact">
-        <p>Watch on YouTube: <a href="https://www.youtube.com/@FaeAcademyBooks">@FaeAcademyBooks</a></p>
+        <p class="footer-watch">Watch the story on YouTube: <a href="https://www.youtube.com/@FaeAcademyBooks">@FaeAcademyBooks</a></p>
         <p class="notices">Fae Academy is a work of fiction. Names, characters, places and events are products of the author's imagination, and any resemblance to actual persons, living or dead, is coincidental. Cover art, portraits and some video content on this site are created with the help of AI tools. Lyra Blackwood is a pen name.</p>
         <p>Contact: <a href="mailto:lyra@lyrablackwood.com">lyra@lyrablackwood.com</a></p>
         <p class="copyright">&copy; 2025-2026 Godman Development, publishing as Lyra Blackwood. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
